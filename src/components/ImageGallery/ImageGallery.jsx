@@ -4,7 +4,7 @@ import ImageGalleryItem from 'components/ImageGalleryItem';
 
 import { ImageGalleryList } from './ImageGallery.styled';
 
-export const ImageGallery = ({ images }) => {
+const ImageGallery = ({ images }) => {
   return (
     <ImageGalleryList>
       {images.map(({ id, ...restProps }) => (

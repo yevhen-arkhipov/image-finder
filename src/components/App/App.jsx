@@ -10,6 +10,7 @@ import Button from 'components/Button';
 
 import { getImages } from 'services/api';
 
+import { GlobalStyle } from './GlobalStyle';
 import { Container } from './App.styled';
 
 const App = () => {
@@ -27,7 +28,6 @@ const App = () => {
     const findImages = async () => {
       try {
         setIsLoading(true);
-
         const photos = await getImages(query, page);
         photos.hits.length === 0
           ? Notify.failure('Sorry, no images found. Try something else!')
@@ -70,6 +70,7 @@ const App = () => {
           )}
         </Container>
       </Box>
+      <GlobalStyle />
     </>
   );
 };

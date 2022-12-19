@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types';
-
 import { Formik } from 'formik';
+import PropTypes from 'prop-types';
 
 import {
   Header,
